@@ -1,0 +1,111 @@
+.high {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* --- Register Container --- */
+
+.auth-container {
+  background: #ffffff; /* White background for the form container */
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Soft shadow for a floating effect */
+  padding: 40px;
+  width: 100%;
+  max-width: 400px; /* Limits the container width for a focused layout */
+  text-align: center;
+  box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.auth-container:hover {
+  transform: translateY(-5px); /* Lifts the container slightly on hover */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15); /* Enhances the shadow on hover */
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 24px;
+}
+
+/* --- Form Elements --- */
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* Spacing between form elements */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 14px 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #555;
+  transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition for focus effect */
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  outline: none;
+  border-color: #007bff; /* A vibrant blue for the focus state */
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2); /* A soft glow on focus */
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 14px;
+  background: #007bff; /* A prominent blue color */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  margin-top: 8px;
+}
+
+button[type="submit"]:hover {
+  background: #0056b3; /* Darker blue on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+/* --- Error Message --- */
+
+p {
+  font-size: 0.9rem;
+  color: #d9534f; /* A standard red for error messages */
+  margin-top: 10px;
+}
+
+/* --- Login Link --- */
+
+.auth-container p:last-of-type {
+  margin-top: 24px;
+  font-size: 1rem;
+  color: #666;
+}
+
+.auth-container p:last-of-type span {
+  color: #007bff;
+  cursor: pointer;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.auth-container p:last-of-type span:hover {
+  color: #0056b3; /* Darker blue on hover for the link */
+  text-decoration: underline;
+}
